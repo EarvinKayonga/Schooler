@@ -1,16 +1,9 @@
-var http = require('http');
+var http = require('http'),
+    async = require('async');
 
-module.exports = function (website, callback){
-
-    http.get(website, function(response){
-	var str = '';
-	response.on("data", function(res){
-	    str += (res.toString());
-	});
-	response.on("end", function(){
-	    console.log(str);
-	});
-    }).on('close', function(){
-	return callback();
-    });
+module.exports = function (websites, callback){
+    async.parallel([
+	function(){ ... },
+	function(){ ... }
+    ], callback);
 };
