@@ -1,0 +1,40 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'dist-tag', 'add', 'q@lastest' ]
+2 info using npm@3.5.2
+3 info using node@v0.10.29
+4 verbose node symlink /usr/bin/node
+5 verbose dist-tag add latest to q@lastest
+6 silly mapToRegistry name q
+7 silly mapToRegistry using default registry
+8 silly mapToRegistry registry http://localhost:15443/
+9 silly mapToRegistry uri http://localhost:15443/q
+10 verbose request uri http://localhost:15443/-/package/q/dist-tags
+11 verbose request no auth needed
+12 info attempt registry request try #1 at 11:39:36
+13 verbose request id e78273a317ea6a3f
+14 http request GET http://localhost:15443/-/package/q/dist-tags
+15 http 404 http://localhost:15443/-/package/q/dist-tags
+16 verbose headers { 'content-type': 'application/json',
+16 verbose headers   date: 'Sat, 19 Dec 2015 10:39:36 GMT',
+16 verbose headers   connection: 'keep-alive',
+16 verbose headers   'transfer-encoding': 'chunked' }
+17 verbose stack Error: missing : -/package/q/dist-tags
+17 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+17 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+17 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+17 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+17 verbose stack     at Request.emit (events.js:98:17)
+17 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+17 verbose stack     at Request.emit (events.js:117:20)
+17 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+17 verbose stack     at IncomingMessage.emit (events.js:117:20)
+17 verbose stack     at _stream_readable.js:929:16
+18 verbose statusCode 404
+19 verbose cwd /home/earvin/Lab/Schooler/how-to-npm/DevEv
+20 error Linux 3.16.0-4-amd64
+21 error argv "node" "/usr/local/bin/npm" "dist-tag" "add" "q@lastest"
+22 error node v0.10.29
+23 error npm  v3.5.2
+24 error code E404
+25 error 404 missing : -/package/q/dist-tags
+26 verbose exit [ 1, true ]

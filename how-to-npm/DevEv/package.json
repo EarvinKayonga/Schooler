@@ -1,6 +1,6 @@
 {
   "name": "@earvinkayonga/first",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "First hello module",
   "main": "index.js",
   "scripts": {
