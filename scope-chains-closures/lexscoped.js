@@ -1,7 +1,7 @@
 function foo()
 {
     var bar;
-    quux = 'dee';
+    quux = 'fefe';
     function zip()
     {
 	var quux = 'value';
