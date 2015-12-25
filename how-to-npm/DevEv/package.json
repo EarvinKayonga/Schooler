@@ -20,7 +20,5 @@
     "url": "https://github.com/EarvinKayonga/Schooler/issues"
   },
   "homepage": "https://github.com/EarvinKayonga/Schooler#readme",
-  "dependencies": {
-    "@linclark/pkg": "^1.0.2"
-  }
+  "dependencies": {}
 }
