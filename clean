@@ -1,6 +1,6 @@
 #!/bin/bash
 echo 'Performing a cleaning session in this folder';
-rm *~ 2> /dev/null
-rm *#* 2> /dev/null
 echo "Removed : ";
 ls *~ *#* 2> /dev/null;
+rm *~ 2> /dev/null
+rm *#* 2> /dev/null
