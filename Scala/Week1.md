@@ -109,3 +109,32 @@ Tests
 sqrt(2)
 sqrt(1e-60)
 sqrt(1e60)
+
+## 1.6 Blocks and Lexical Scope
+
+privatizing the intermediaire functions
+
+```
+def sqrt(x: Double):Double = {
+def abs(x: Double) = if (x < 0) -x else x
+
+def mean( y: Double, x: Double): Double = {
+  (x+y)/2
+}
+
+def improve(guess: Double): Double = {
+  mean(guess, x/guess);
+}
+
+def isGoodEnough(guess: Double) = { 
+  abs(guess * guess - x) / x < 0.000001
+}
+
+def sqrtIter(guess: Double): Double = {
+  if (isGoodEnough(guess)) guess;
+  else sqrtIter(improve(guess))
+}
+
+sqrtIter(1.0)
+}
+```
