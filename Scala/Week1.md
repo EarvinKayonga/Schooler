@@ -138,3 +138,8 @@ def sqrtIter(guess: Double): Double = {
 sqrtIter(1.0)
 }
 ```
+
+## 1.7 Tail Recursion
+
+sqrtIter is in a tail recursive implementation.
+If the last call in a recursive function is a function => tail recursive 
