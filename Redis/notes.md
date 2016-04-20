@@ -1,3 +1,6 @@
+Admin UI: http://fastoredis.com/download.html
+
+
 5 data structures:
 
 * String
