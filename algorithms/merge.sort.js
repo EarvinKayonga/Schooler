@@ -12,12 +12,13 @@ function mergeSort(list){
 
 function merge(left, right) {
   let final = [];
-  let rIndex, lIndex = 0;
+  let rIndex = 0;
+  let lIndex = 0;
 
   while (rIndex + lIndex < left.length + right.length){
     let rItem = right[rIndex];
     let lItem = left[lIndex];
-
+    
     if(lItem == null){
       final.push(rItem);
       rIndex++;
@@ -35,8 +36,7 @@ function merge(left, right) {
     }
   }
 
-  console.log(final);
-  return final;
+  return (final);
 }
 
 console.log(mergeSort([2, 13, -12, 340, -123, 3]));
